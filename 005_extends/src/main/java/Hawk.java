@@ -4,10 +4,10 @@ public class Hawk extends Bird {
 
     public Hawk() { }
 
-    public Hawk(int age, int weight, Animal prey) {
+    public Hawk(String specie, int age, int weight) {
+        super.specie = specie;
         super.age = age;
         super.weight = weight;
-        this.prey = prey;
     }
 
     public Animal getPrey() {
@@ -19,7 +19,7 @@ public class Hawk extends Bird {
     }
 
     public void predate() {
-        System.out.println("Predate prey!");
+        System.out.println("感到饥肠辘辘并且捕食了一只" + prey.specie);
     }
 
 }

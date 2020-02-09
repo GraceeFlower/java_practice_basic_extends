@@ -8,8 +8,8 @@ public class Bird extends Animal {
         this.flySpeed = flySpeed;
     }
 
-    public void flyMode() {
-        System.out.println("翱翔");
+    public void fly() {
+        System.out.println("翱翔天空");
     }
 
     public String getFlySpeed() {

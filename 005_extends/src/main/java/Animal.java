@@ -1,11 +1,17 @@
 public class Animal {
 
+    String specie;
     int age;
     int weight;
 
     public Animal() { }
 
-    public Animal(int age, int weight) {
+    public Animal(String specie) {
+        this.specie = specie;
+    }
+
+    public Animal(String specie, int age, int weight) {
+        this.specie = specie;
         this.age = age;
         this.weight = weight;
     }
@@ -19,7 +25,7 @@ public class Animal {
     }
 
     public String getWeight() {
-        return weight + "kg";
+        return weight + "Kg";
     }
 
     public void setWeight(int weight) {
@@ -27,10 +33,10 @@ public class Animal {
     }
 
     public void eat() {
-        System.out.println("Eat food!");
+        System.out.println("饱餐一顿");
     }
 
     public void sleep() {
-        System.out.println("Sleep!");
+        System.out.println("心满意足地睡觉了");
     }
 }
