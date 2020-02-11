@@ -8,15 +8,17 @@ public class Application {
     public static void main(String[] args) {
 
         Animal rabbit = new Animal("兔子");
-        Hawk hawk = new Hawk("老鹰", 4, 5);
+        Hawk hawk = new Hawk("老鹰", 4, 5, 200);
         hawk.setPrey(rabbit);
 
-        System.out.println("一只" + hawk.getAge() + "的" + hawk.specie + "，体重" + hawk.getWeight());
-        System.out.println("这只" + hawk.specie + "生活在" + rabbit.specie + "窝所以它只捕食" + rabbit.specie);
-        System.out.print("某天它先");
+        System.out.println(
+            "品种：" + hawk.getSpecie() + "\n"
+                + "年龄："+ hawk.getAge() + "\n"
+                + "体重：" + hawk.getWeight() + "\n"
+                + "飞行速度：" + hawk.getFlySpeed());
+        System.out.println("猎物：" + rabbit.getSpecie());
         hawk.fly();
         hawk.predate();
-        System.out.print("然后");
         hawk.eat();
         hawk.sleep();
     }

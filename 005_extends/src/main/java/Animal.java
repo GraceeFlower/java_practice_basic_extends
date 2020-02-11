@@ -1,8 +1,8 @@
 public class Animal {
 
-    String specie;
-    int age;
-    int weight;
+    private String specie;
+    private int age;
+    private int weight;
 
     public Animal() { }
 
@@ -14,6 +14,14 @@ public class Animal {
         this.specie = specie;
         this.age = age;
         this.weight = weight;
+    }
+
+    public String getSpecie() {
+        return specie;
+    }
+
+    public void setSpecie(String specie) {
+        this.specie = specie;
     }
 
     public String getAge() {
