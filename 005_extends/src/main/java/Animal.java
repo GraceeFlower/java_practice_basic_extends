@@ -47,4 +47,10 @@ public class Animal {
     public void sleep() {
         System.out.println("心满意足地睡觉了");
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+            "specie='" + specie + '\'' + '}';
+    }
 }

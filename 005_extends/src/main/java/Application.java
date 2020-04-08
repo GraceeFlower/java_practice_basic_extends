@@ -8,15 +8,9 @@ public class Application {
     public static void main(String[] args) {
 
         Animal rabbit = new Animal("兔子");
-        Hawk hawk = new Hawk("老鹰", 4, 5, 200);
-        hawk.setPrey(rabbit);
+        Hawk hawk = new Hawk("老鹰", 4, 5, 200, rabbit);
 
-        System.out.println(
-            "品种：" + hawk.getSpecie() + "\n"
-                + "年龄："+ hawk.getAge() + "\n"
-                + "体重：" + hawk.getWeight() + "\n"
-                + "飞行速度：" + hawk.getFlySpeed());
-        System.out.println("猎物：" + rabbit.getSpecie());
+        System.out.println(hawk);
         hawk.fly();
         hawk.predate();
         hawk.eat();
